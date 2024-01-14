@@ -1,0 +1,24 @@
+<!-- index.html.erb -->
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts Index</title>
+
+  <!-- Include the external JavaScript file using javascript_include_tag -->
+  <%= javascript_include_tag 'main' %>
+</head>
+<body>
+  <h1>Posts Index</h1>
+
+  <h5>ID: <span id="id"></span></h5>
+  <h5>Message: <span id="message"></span></h5>
+
+  <!-- BUTTON FOR SENDING MESSAGE -->
+  <input type="text" id="inputMessage" placeholder="Type your message">
+  <button id="updateMessageButton">Update Message</button>
+</body>
+</html>
